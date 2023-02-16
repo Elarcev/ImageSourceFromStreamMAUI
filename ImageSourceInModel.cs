@@ -21,9 +21,4 @@
                     return _imageSource = null;
                 }
             }
-            set
-            {
-                _imageSource = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CustomerImage)));
-            }
         }
