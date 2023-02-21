@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ImageSourceIssue.MainPage">
+
+    <ScrollView>
+        <StackLayout>
+            <Image x:Name="TestImage" Source="{Binding TestImage}" WidthRequest="300" HeightRequest="300" Aspect="AspectFit" BackgroundColor="LightGoldenrodYellow"/>
+            <Button Text="Use FromFile" WidthRequest="300" Clicked="Button_Clicked"/>
+            <Button Text="Use FromStream" WidthRequest="300" Clicked="Button_Clicked_1"/>
+        </StackLayout>
+        
+    </ScrollView>
+
+</ContentPage>
